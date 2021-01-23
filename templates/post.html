@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<form method="post" action="/post_save">
+	<div>
+  	Subject
+    <input name="subject" />
+	</div>
+	<div>
+    <textarea name="body"></textarea>
+	</div>
+	<div>
+    <input type="submit" value="Save" />
+	</div>
+</form>
+{% endblock %}
